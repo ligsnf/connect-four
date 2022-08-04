@@ -6,7 +6,7 @@ Learning from tutorial.
 
 **How to Build Connect 4 with JavaScript HTML CSS**
 ![image](https://img.youtube.com/vi/4ARsthVnCTg/0.jpg)
-<img align="left" width="480" height="280" overflow="hidden" src="https://img.youtube.com/vi/4ARsthVnCTg/0.jpg">
+<img align="left" width="480" height="270" src="https://img.youtube.com/vi/4ARsthVnCTg/maxresdefault.jpg">
 - YouTube: https://youtu.be/4ARsthVnCTg
 - GitHub: https://github.com/ImKennyYip/Connect4
 
