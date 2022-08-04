@@ -7,7 +7,7 @@ Learning from tutorial.
 <div align="left">
   <h5> How to Build Connect 4 with JavaScript HTML CSS </h5>
   <img width="480" height="270" src="https://img.youtube.com/vi/4ARsthVnCTg/maxresdefault.jpg"/>
-  <ul>
+  <ul list-style="none" padding-left="0">
     <li> YouTube: https://youtu.be/4ARsthVnCTg </li>
     <li> GitHub: https://github.com/ImKennyYip/Connect4 </li>
   </ul>
