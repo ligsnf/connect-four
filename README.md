@@ -4,11 +4,12 @@ Learning from tutorial.
 
 ### Sources:
 
-**How to Build Connect 4 with JavaScript HTML CSS**
+<h2> How to Build Connect 4 with JavaScript HTML CSS** </h2>
 <img align="left" width="480" height="270" src="https://img.youtube.com/vi/4ARsthVnCTg/maxresdefault.jpg"/>
-<br>
-- YouTube: https://youtu.be/4ARsthVnCTg
-- GitHub: https://github.com/ImKennyYip/Connect4
+<ul>
+  <li> YouTube: https://youtu.be/4ARsthVnCTg </li>
+  <li> GitHub: https://github.com/ImKennyYip/Connect4 </li>
+</ul>
 
 **Connect Four in JavaScript**
 <img align="left" width="480" height="270" src="https://img.youtube.com/vi/aroYjgQH8Tw/maxresdefault.jpg"/>
