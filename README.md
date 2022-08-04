@@ -5,19 +5,19 @@ Learning from tutorial.
 ### Sources:
 
 **How to Build Connect 4 with JavaScript HTML CSS**
-<img width="480" height="270" src="https://img.youtube.com/vi/4ARsthVnCTg/maxresdefault.jpg"/>
+<img align="left" width="480" height="270" src="https://img.youtube.com/vi/4ARsthVnCTg/maxresdefault.jpg"/>
 <br>
 - YouTube: https://youtu.be/4ARsthVnCTg
 - GitHub: https://github.com/ImKennyYip/Connect4
 
 **Connect Four in JavaScript**
-<img width="480" height="270" src="https://img.youtube.com/vi/aroYjgQH8Tw/maxresdefault.jpg"/>
+<img align="left" width="480" height="270" src="https://img.youtube.com/vi/aroYjgQH8Tw/maxresdefault.jpg"/>
 <br>
 - YouTube: https://youtu.be/aroYjgQH8Tw
 - GitHub: https://github.com/kubowania/connect-four
 
 **Connect Four with Javascript & jQuery - Tutorial**
-<img width="480" height="270" src="https://img.youtube.com/vi/531FRc8e2Sk/maxresdefault.jpg"/>
+<img align="left" width="480" height="270" src="https://img.youtube.com/vi/531FRc8e2Sk/maxresdefault.jpg"/>
 <br>
 - YouTube: https://youtu.be/531FRc8e2Sk
 - GitHub: https://github.com/codyseibert/js-connect-four
