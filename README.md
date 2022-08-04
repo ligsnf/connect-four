@@ -4,7 +4,7 @@ Learning from tutorial.
 
 ### Sources:
 
-<h2> How to Build Connect 4 with JavaScript HTML CSS** </h2>
+<h5> How to Build Connect 4 with JavaScript HTML CSS** </h5>
 <img align="left" width="480" height="270" src="https://img.youtube.com/vi/4ARsthVnCTg/maxresdefault.jpg"/>
 <ul>
   <li> YouTube: https://youtu.be/4ARsthVnCTg </li>
