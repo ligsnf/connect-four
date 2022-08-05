@@ -19,6 +19,9 @@ function setGame() {
     board = [];
     currentColumns = [5, 5, 5, 5, 5, 5, 5];
 
+    let currentTurn = document.getElementById("game-status");
+    currentTurn.innerText = "Red's Turn";
+
     for (let r = 0; r < rows; r++) {
         let row = [];
         for (let c = 0; c < columns; c++) {
@@ -53,13 +56,16 @@ function setPiece() {
 
     board[r][c] = currentPlayer;
     let tile = document.getElementById(r.toString() + "-" + c.toString());
+    let currentTurn = document.getElementById("game-status");
     if (currentPlayer == playerRed) {
         tile.classList.add("red-piece");
         currentPlayer = playerYellow;
+        currentTurn.innerText = "Yellow's Turn";
     }
     else {
         tile.classList.add("yellow-piece");
         currentPlayer = playerRed;
+        currentTurn.innerText = "Red's Turn";
     }
 
     // Update current state of columns
