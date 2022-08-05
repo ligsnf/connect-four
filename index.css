@@ -20,11 +20,20 @@ h1 {
 }
 
 .tile {
-    height: 90x;
-    width: 90px;
-
     box-sizing: border-box;
+    height: 80x;
+    width: 80px;
+    margin: 5px;
 
     background-color: white;
     border-radius: 50px;
+    border: 5px solid navy;
+}
+
+.red-piece {
+    background-color: red;
+}
+
+.yellow-piece {
+    background-color: yellow;
 }
