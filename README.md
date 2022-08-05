@@ -2,7 +2,7 @@
 Connect 4 web game.
 Learning from tutorial.
 
-### Sources:
+<h2> Sources: </h2>
 
 <div align="left">
   <h3><a href="https://youtu.be/4ARsthVnCTg" target="_blank"> How to Build Connect 4 with JavaScript HTML CSS </a></h3>
