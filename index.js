@@ -136,8 +136,11 @@ function setWinner(r, c) {
     let winner = document.getElementById("game-status");
     if (board[r][c] == playerRed) {
         winner.innerText = "Red Wins";
+        setTimeout("alert('Red Won!')",100);
     } else {
+
         winner.innerText = "Yellow Wins";
+        setTimeout("alert('Yellow Won!')",100);
     }
 
     gameOver = true;
