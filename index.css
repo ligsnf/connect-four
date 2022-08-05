@@ -52,3 +52,22 @@ h2 {
 .yellow-piece {
     background-color: yellow;
 }
+
+.reset-button {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 105px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: opacity 0.15s;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.reset-button:hover {
+    opacity: 0.8;
+}
+.reset-button:active {
+    opacity: 0.5;
+}

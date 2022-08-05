@@ -16,11 +16,16 @@ window.onload = function() {
 }
 
 function setGame() {
+    document.getElementById("board").innerHTML = "";
+    currentPlayer = playerRed;
+    gameOver = false;
+
     board = [];
     currentColumns = [5, 5, 5, 5, 5, 5, 5];
 
     let currentTurn = document.getElementById("game-status");
     currentTurn.innerText = "Red's Turn";
+    
 
     for (let r = 0; r < rows; r++) {
         let row = [];
