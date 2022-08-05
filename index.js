@@ -72,4 +72,25 @@ function setPiece() {
 
 function checkWinner() {
     // Check horizontal
+    for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < columns; c++) {
+            if (board[r][c] != ' ') {
+                if (board[r][c] == board[r][c+1] && board[r][c+1] == board[r][c+2] &&  board[r][c+2] == board[r][c+3]) {
+                    setWinner(r, c);
+                    return;
+                }
+            }
+        }
+    }
+}
+
+function setWinner(r, c) {
+    let winner = document.getElementById("winner");
+    if (board[r][c] == playerRed) {
+        winner.innerText = "Red Wins";
+    } else {
+        winner.innerText = "Yellow Wins";
+    }
+
+    gameOver = true;
 }
