@@ -122,7 +122,7 @@ function checkWinner() {
 }
 
 function setWinner(r, c) {
-    let winner = document.getElementById("winner");
+    let winner = document.getElementById("game-status");
     if (board[r][c] == playerRed) {
         winner.innerText = "Red Wins";
     } else {
