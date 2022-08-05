@@ -29,5 +29,6 @@ function setGame() {
             tile.classList.add("tile");
             document.getElementById("board").append(tile);
         }
+        board.push(row);
     }
 }

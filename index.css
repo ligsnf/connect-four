@@ -18,3 +18,13 @@ h1 {
     display: flex;
     flex-wrap: wrap;
 }
+
+.tile {
+    height: 90x;
+    width: 90px;
+
+    box-sizing: border-box;
+
+    background-color: white;
+    border-radius: 50px;
+}
