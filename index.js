@@ -6,6 +6,7 @@ var currentPlayer = playerRed;
 
 var gameOver = false;
 var board;
+var currentColumns;
 
 var rows = 6;
 var columns = 7;
@@ -16,6 +17,7 @@ window.onload = function() {
 
 function setGame() {
     board = [];
+    currentColumns = [5, 5, 5, 5, 5, 5, 5];
 
     for (let r = 0; r < rows; r++) {
         let row = [];
@@ -43,12 +45,31 @@ function setPiece() {
     let r = parseInt(coords[0]);
     let c = parseInt(coords[1]);
 
+    r = currentColumns[c];
+    // Checking if column is full
+    if (r < 0) {
+        return;
+    }
+
     board[r][c] = currentPlayer;
-    let tile = this;
+    let tile = document.getElementById(r.toString() + "-" + c.toString());
     if (currentPlayer == playerRed) {
         tile.classList.add("red-piece");
+        currentPlayer = playerYellow;
     }
     else {
         tile.classList.add("yellow-piece");
+        currentPlayer = playerRed;
     }
+
+    // Update current state of columns
+    r -= 1;
+    currentColumns[c] = r;
+
+    // Check for a winner
+    checkWinner();
+}
+
+function checkWinner() {
+    // Check horizontal
 }
