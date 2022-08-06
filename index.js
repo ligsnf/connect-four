@@ -38,6 +38,8 @@ function setGame() {
             tile.id = r.toString() + "-" + c.toString(); // gives id to html div of board coordinate, e.g. '3-4'
             tile.classList.add("tile");
             tile.addEventListener("click", setPiece);
+            tile.addEventListener("mouseenter", addHoverPiece);
+            tile.addEventListener("mouseleave", removeHoverPiece);
             document.getElementById("board").append(tile);
         }
         board.push(row);
@@ -63,11 +65,13 @@ function setPiece() {
     let tile = document.getElementById(r.toString() + "-" + c.toString());
     let currentTurn = document.getElementById("game-status");
     if (currentPlayer == playerRed) {
+        tile.classList.remove("red-piece-next");
         tile.classList.add("red-piece");
         currentPlayer = playerYellow;
         currentTurn.innerText = "Yellow's Turn";
     }
     else {
+        tile.classList.remove("yellow-piece-next");
         tile.classList.add("yellow-piece");
         currentPlayer = playerRed;
         currentTurn.innerText = "Red's Turn";
@@ -79,6 +83,54 @@ function setPiece() {
 
     // Check for a winner
     checkWinner();
+}
+
+function addHoverPiece() {
+    if (gameOver) {
+        return;
+    }
+
+    let coords = this.id.split("-"); // "0-0" -> ["0", "0"]
+    let r = parseInt(coords[0]);
+    let c = parseInt(coords[1]);
+
+    r = currentColumns[c];
+    // Checking if column is full
+    if (r < 0) {
+        return;
+    }
+
+    let tile = document.getElementById(r.toString() + "-" + c.toString());
+    if (currentPlayer == playerRed) {
+        tile.classList.add("red-piece-next");
+    }
+    else {
+        tile.classList.add("yellow-piece-next");
+    }
+}
+
+function removeHoverPiece() {
+    if (gameOver) {
+        return;
+    }
+
+    let coords = this.id.split("-"); // "0-0" -> ["0", "0"]
+    let r = parseInt(coords[0]);
+    let c = parseInt(coords[1]);
+
+    r = currentColumns[c];
+    // Checking if column is full
+    if (r < 0) {
+        return;
+    }
+
+    let tile = document.getElementById(r.toString() + "-" + c.toString());
+    if (currentPlayer == playerRed) {
+        tile.classList.remove("red-piece-next");
+    }
+    else {
+        tile.classList.remove("yellow-piece-next");
+    }
 }
 
 function checkWinner() {

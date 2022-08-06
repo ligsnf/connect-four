@@ -53,6 +53,14 @@ h2 {
     background-color: yellow;
 }
 
+.red-piece-next {
+    background-color: rgb(255, 191, 185);
+}
+
+.yellow-piece-next {
+    background-color: rgb(251, 251, 172);
+}
+
 .reset-button {
     background-color: rgb(200, 0, 0);
     color: white;
