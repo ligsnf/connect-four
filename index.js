@@ -93,6 +93,15 @@ function setPiece() {
 
     // Check for a winner
     checkWinner();
+
+    // Begin next hover
+    tile = document.getElementById(r.toString() + "-" + c.toString());
+    if (currentPlayer == playerRed) {
+        tile.classList.add("red-piece-next");
+    }
+    else {
+        tile.classList.add("yellow-piece-next");
+    }
 }
 
 function addHoverPiece() {
