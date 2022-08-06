@@ -22,6 +22,7 @@ function setGame() {
 
     let status = document.getElementById("status-container");
     status.classList.remove("yellow-background");
+    status.classList.remove("grey-background");
     status.classList.add("red-background");
 
     // reset board and column state on js side
@@ -189,6 +190,17 @@ function checkWinner() {
                 }
             }
         }
+    }
+
+    // Check Draw
+    const equals = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+    if (equals(currentColumns, [-1, -1, -1, -1, -1, -1, -1])) {
+        document.getElementById("game-status").innerText = "Draw";
+        document.getElementById("status-container").classList.remove("red-background");
+        document.getElementById("status-container").classList.remove("yellow-background");
+        document.getElementById("status-container").classList.add("grey-background");
+        setTimeout("alert('Draw!')",100);
+        gameOver = true;
     }
 
 }
