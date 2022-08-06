@@ -95,6 +95,9 @@ function setPiece() {
     checkWinner();
 
     // Begin next hover
+    if (gameOver) {
+        return;
+    }
     tile = document.getElementById(r.toString() + "-" + c.toString());
     if (currentPlayer == playerRed) {
         tile.classList.add("red-piece-next");
@@ -217,6 +220,7 @@ function checkWinner() {
 function setWinner(r, c) {
     let winner = document.getElementById("game-status");
     let status = document.getElementById("status-container");
+
     if (board[r][c] == playerRed) {
         winner.innerText = "Red Wins";
         status.classList.remove("yellow-background");
