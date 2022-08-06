@@ -1,4 +1,4 @@
-
+// Script for web connect 4 game
 
 var playerRed = "R";
 var playerYellow = "Y";
@@ -16,16 +16,16 @@ window.onload = function() {
 }
 
 function setGame() {
-    document.getElementById("board").innerHTML = "";
+    document.getElementById("board").innerHTML = ""; // empty board for reset
     currentPlayer = playerRed;
     gameOver = false;
 
+    // reset board and column state on js side
     board = [];
     currentColumns = [5, 5, 5, 5, 5, 5, 5];
 
     let currentTurn = document.getElementById("game-status");
     currentTurn.innerText = "Red's Turn";
-    
 
     for (let r = 0; r < rows; r++) {
         let row = [];
@@ -61,11 +61,11 @@ function setPiece() {
         return;
     }
 
-    board[r][c] = currentPlayer;
+    board[r][c] = currentPlayer; // update board on js side
     let tile = document.getElementById(r.toString() + "-" + c.toString());
     let currentTurn = document.getElementById("game-status");
     if (currentPlayer == playerRed) {
-        tile.classList.remove("red-piece-next");
+        tile.classList.remove("red-piece-next"); // remove hover
         tile.classList.add("red-piece");
         currentPlayer = playerYellow;
         currentTurn.innerText = "Yellow's Turn";
