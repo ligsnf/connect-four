@@ -11,12 +11,6 @@ Learning from tutorial.
 </div>
 
 <div align="left">
-  <h3><a href="https://youtu.be/aroYjgQH8Tw" target="_blank"> Connect Four in JavaScript </a></h3>
-  <img width="320" height="180" src="https://img.youtube.com/vi/aroYjgQH8Tw/maxresdefault.jpg"/>
-  <p><a href="https://github.com/kubowania/connect-four" target="_blank"> Source Code (GitHub) </a></p>
-</div>
-
-<div align="left">
   <h3><a href="https://youtu.be/531FRc8e2Sk" target="_blank"> Connect Four with Javascript & jQuery - Tutorial </a></h3>
   <img width="320" height="180" src="https://img.youtube.com/vi/531FRc8e2Sk/maxresdefault.jpg"/>
   <p><a href="https://github.com/codyseibert/js-connect-four" target="_blank"> Source Code (GitHub) </a></p>
