@@ -9,13 +9,33 @@ h1{
     line-height: 36px;
     font-weight: 700;
     color: #071924;
+    margin-bottom: 0px;
 }
 
 h2 {
-    font-size: 24px;
-    line-height: 18px;
+    font-size: 20px;
     font-weight: 700;
     color: #071924;
+    opacity: 0.8;
+}
+
+#status-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 180px;
+    line-height: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.red-background {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+.yellow-background {
+    background-color: rgba(255, 255, 0, 0.4);
 }
 
 #board {

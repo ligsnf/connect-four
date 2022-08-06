@@ -20,6 +20,10 @@ function setGame() {
     currentPlayer = playerRed;
     gameOver = false;
 
+    let status = document.getElementById("status-container");
+    status.classList.remove("yellow-background");
+    status.classList.add("red-background");
+
     // reset board and column state on js side
     board = [];
     currentColumns = [5, 5, 5, 5, 5, 5, 5];
@@ -63,17 +67,22 @@ function setPiece() {
 
     board[r][c] = currentPlayer; // update board on js side
     let tile = document.getElementById(r.toString() + "-" + c.toString());
+    let status = document.getElementById("status-container");
     let currentTurn = document.getElementById("game-status");
     if (currentPlayer == playerRed) {
         tile.classList.remove("red-piece-next"); // remove hover
         tile.classList.add("red-piece");
         currentPlayer = playerYellow;
+        status.classList.remove("red-background");
+        status.classList.add("yellow-background");
         currentTurn.innerText = "Yellow's Turn";
     }
     else {
         tile.classList.remove("yellow-piece-next");
         tile.classList.add("yellow-piece");
         currentPlayer = playerRed;
+        status.classList.remove("yellow-background");
+        status.classList.add("red-background");
         currentTurn.innerText = "Red's Turn";
     }
 
@@ -186,12 +195,16 @@ function checkWinner() {
 
 function setWinner(r, c) {
     let winner = document.getElementById("game-status");
+    let status = document.getElementById("status-container");
     if (board[r][c] == playerRed) {
         winner.innerText = "Red Wins";
+        status.classList.remove("yellow-background");
+        status.classList.add("red-background");
         setTimeout("alert('Red Won!')",100);
     } else {
-
         winner.innerText = "Yellow Wins";
+        status.classList.remove("red-background");
+        status.classList.add("yellow-background");
         setTimeout("alert('Yellow Won!')",100);
     }
 
