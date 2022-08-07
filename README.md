@@ -1,6 +1,6 @@
 # Connect 4
 Connect 4 JavaScript web game.
-Learning from tutorial.
+Made by learning from tutorial, then extending with my own added features to learn more.
 
 <h2> Sources: </h2>
 
