@@ -1,5 +1,5 @@
 # Connect 4
-Connect 4 web game.
+Connect 4 JavaScript web game.
 Learning from tutorial.
 
 <h2> Sources: </h2>
