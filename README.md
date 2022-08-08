@@ -5,6 +5,13 @@ Made by learning from tutorial, then extending with my own added features to lea
 Future implementation ideas: 
 - pop-up box with ok and new game options
 - counter to keep track of how many wins each player has
+  
+Completed implementation ideas: 
+- display whose turn it is with conditional formatting for background colour
+- reset game button
+- delayed alert box pop-up on game over
+- hover piece showing where next piece will go
+- check for draw
 
 <h2> Sources: </h2>
 
