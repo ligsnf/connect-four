@@ -3,7 +3,7 @@ Connect 4 JavaScript web game.
 Made by learning from tutorial, then extending with my own added features to learn more.  
   
 Future implementation ideas: 
-- pop-up box with ok and new game options
+- modal pop-up box with ok and new game options
 - counter to keep track of how many wins each player has
 - multiplayer
   
