@@ -1,6 +1,10 @@
 # Connect 4
-Connect 4 JavaScript web game.
-Made by learning from tutorial, then extending with my own added features to learn more.
+Connect 4 JavaScript web game.  
+Made by learning from tutorial, then extending with my own added features to learn more.  
+  
+Ideas to add: 
+- pop-up box with ok and new game options
+- counter to keep track of how many wins each player has
 
 <h2> Sources: </h2>
 
