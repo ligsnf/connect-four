@@ -5,6 +5,7 @@ Made by learning from tutorial, then extending with my own added features to lea
 Future implementation ideas: 
 - pop-up box with ok and new game options
 - counter to keep track of how many wins each player has
+- multiplayer
   
 Completed implementation ideas: 
 - display whose turn it is with conditional formatting for background colour
